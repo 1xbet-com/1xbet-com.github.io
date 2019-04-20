@@ -16,6 +16,19 @@
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://1xbet-com.github.io/assets/css/style.css">
+<script>
+function delayRedirect(){
+    document.getElementById('delayMsg').innerHTML = 'Please wait you\'ll be redirected after <span id="countDown">5</span> seconds....';
+    var count = 5;
+    setInterval(function(){
+        count--;
+        document.getElementById('countDown').innerHTML = count;
+        if (count == 0) {
+            window.location = 'https://www.google.com'; 
+        }
+    },1000);
+}
+</script>    
     <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"1xbet-com","url":"https://1xbet-com.github.io"}</script>
 </head>
 
@@ -47,7 +60,8 @@
                 <header>
                     <p>1xbet company</p>
                     <h1><a href="http://refpalohuz.top/L?tag=d_194285m_1599c_&amp;site=194285&amp;ad=1599">For Enter to 1xbet company site Click here</a></h1><address>by 1xbet</address>refreshed
-                    <time datetime="2019-04-19T16:05">April 19, 2019</time>
+<div id="delayMsg"></div>
+<input type="button" onclick="delayRedirect()" value="Click to Redirect"/>
                 </header>
             </section>
             <div class="category category--layout-1"></div>
